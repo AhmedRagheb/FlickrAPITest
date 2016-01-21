@@ -1,4 +1,4 @@
-# FlickrAPITest
+# Flickr API Test
 ASP.net MVC Flickr API Test with HttpCache
 
 + AJAX status "Requesting, Retrieving"
