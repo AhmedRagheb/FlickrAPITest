@@ -1,0 +1,90 @@
+﻿body {
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #fff;
+    margin: 0;
+    background: url("../background.jpg") center center fixed;
+}
+
+.imageTitle {
+    color: white;
+    text-align: center;
+    vertical-align: central;
+    background: black;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    left: 0;
+    /*display: none;*/
+
+    opacity: 0; 
+
+     -webkit-transition: all .3s ease .15s;
+    -moz-transition: all .3s ease .15s;
+    -o-transition: all .3s ease .15s;
+    -ms-transition: all .3s ease .15s;
+    transition: all .3s ease .15s;
+
+    transition-duration: 1s, 1s;
+    transition-delay: 0s, 1s;
+
+}
+
+.ImageCard {
+    
+    background: rgba(0,0,0,.3);
+    height: 350px;
+    border: 0.4px solid gray;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.ImageCard figure {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 300px;
+    overflow: hidden;
+}
+
+.ImageCard:hover .imageTitle {
+    /*display: block;*/
+    opacity: 1;
+}
+
+
+.Header {
+    background: rgba(177, 177, 177, 0.7);
+    height: 70px;
+    padding: 20px 0px;
+}
+
+.CacheStatus {
+    margin-bottom: 20px;
+}
+
+.Header input {
+    border-radius: 0px !important;
+}
+
+@media (min-width: 1200px) {
+    .col-lg-1, .col-md-1 {
+        width: 10%;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-sm-2 {
+        width: 20%;
+    }
+
+    .ImageCard {
+        height: 250px;
+    }
+
+    .ImageCard figure {
+        height: 200px;
+    }
+}

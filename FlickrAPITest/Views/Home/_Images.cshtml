@@ -1,0 +1,23 @@
+﻿@model List<FlickrAPITest.Models.FlickrImage>
+
+<div class="CacheStatus">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h5>
+            <span class="label label-info">@ViewBag.ImagesSource</span>
+        </h5>
+    </div>
+</div>
+<div>
+    @foreach (var image in Model)
+    {
+        <div class="col-xs-12 col-sm-2 col-md-1 col-lg-1">
+            <div class="ImageCard">
+                <figure>
+                    <img src="@image.ImageUrl" class="img-responsive collapse" alt="@image.Title" />       
+                </figure>
+                <h3 class="imageTitle">@image.Title</h3>
+            </div>
+        </div>
+    }
+
+</div>

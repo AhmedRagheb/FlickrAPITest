@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>@ViewBag.Title</title>
+
+    <meta name="description" content="Flickr" />
+    <meta itemprop="name" content="Flickr">
+    <meta itemprop="description" content="Flickr">
+    
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content='Flickr'>
+    <meta name="twitter:title" content="Flickr">
+    <meta name="twitter:description" content="Flickr">
+    <meta name="twitter:creator" content='Flickr'>
+    <meta name="twitter:image:src" content="https://s.yimg.com/uy/build/images/general/general-1x-sb03c50d3dc.png">
+    
+    
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Flickr" />
+    <meta property="og:url" content="https://www.flickr.com/" />
+    <meta property="og:image" content="https://s.yimg.com/uy/build/images/general/general-1x-sb03c50d3dc.png">
+    <meta property="og:description" content="Flickr" />
+    <meta property="og:site_name" content="Flickr" />
+    
+
+    <meta name="TimeStamp" content="@DateTime.Now" />
+    <meta name="google" value="notranslate">
+    <meta http-equiv="content-language" content="En">
+    
+
+    @Styles.Render("~/Content/css")
+</head>
+<body>
+    @RenderBody()
+    
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/script")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
