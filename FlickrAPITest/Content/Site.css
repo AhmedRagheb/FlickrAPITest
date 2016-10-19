@@ -5,6 +5,7 @@
     background-color: #fff;
     margin: 0;
     background: url("../background.jpg") center center fixed;
+    background-size: cover;
 }
 
 .imageTitle {
